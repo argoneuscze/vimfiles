@@ -56,3 +56,10 @@ silent! colorscheme sonokai
 " airline customization
 let g:airline#extensions#tabline#enabled = 1
 
+" bullets.vim
+let g:bullets_enabled_file_types = [
+    \ 'markdown',
+    \ 'text',
+    \ 'gitcommit',
+    \ 'scratch'
+    \]
