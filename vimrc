@@ -11,6 +11,13 @@ runtime macros/matchit.vim
 " automatic indenting for any filetype
 set autoindent
 
+" replace tabs with spaces
+set expandtab
+
+" set tab width
+set tabstop=4
+set shiftwidth=4
+
 " intuitive backspace behaviour
 set backspace=indent,eol,start
 
@@ -35,7 +42,7 @@ if has('gui_running')
 endif
 
 " sonokai theme
-packadd sonokai
+silent! packadd sonokai
 
 if has('termguicolors')
   set termguicolors
@@ -44,7 +51,7 @@ endif
 let g:sonokai_style = 'andromeda'
 let g:sonokai_better_performance = 1
 
-colorscheme sonokai
+silent! colorscheme sonokai
 
 " airline customization
 let g:airline#extensions#tabline#enabled = 1
